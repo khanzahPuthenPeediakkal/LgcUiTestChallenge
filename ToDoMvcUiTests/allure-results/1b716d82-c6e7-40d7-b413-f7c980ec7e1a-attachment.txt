@@ -1,0 +1,37 @@
+Test failed: locator.check: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('.todo-list lixxx').filter({ hasText: 'TODO 1 - 2025-01-03' }).locator('.toggle')
+
+    at C:\ToDoMvcUiTests\tests\todomvcTest.spec.ts:33:25 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@18',
+    location: {
+      file: 'C:\\ToDoMvcUiTests\\tests\\todomvcTest.spec.ts',
+      line: 33,
+      column: 25,
+      function: undefined
+    },
+    category: 'pw:api',
+    title: 'locator.check(.todo-list lixxx >> internal:has-text="TODO 1 - 2025-01-03"i >> .toggle)',
+    apiName: 'locator.check',
+    params: {
+      selector: '.todo-list lixxx >> internal:has-text="TODO 1 - 2025-01-03"i >> .toggle',
+      strict: true
+    },
+    boxedStack: undefined,
+    steps: [],
+    complete: [Function: complete],
+    endWallTime: 1735924871461,
+    error: {
+      message: 'Error: locator.check: Test timeout of 30000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for locator('.todo-list lixxx').filter({ hasText: 'TODO 1 - 2025-01-03' }).locator('.toggle')\x1B[22m\n",
+      stack: 'Error: locator.check: Test timeout of 30000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for locator('.todo-list lixxx').filter({ hasText: 'TODO 1 - 2025-01-03' }).locator('.toggle')\x1B[22m\n" +
+        '\n' +
+        '    at C:\\ToDoMvcUiTests\\tests\\todomvcTest.spec.ts:33:25',
+      cause: undefined
+    }
+  }
+}

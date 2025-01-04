@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","5453","Verify TodoMVC functionality","","Sat Jan 04 09:01:18 IST 2025","passed","Sat Jan 04 09:01:24 IST 2025","","todomvcTest.spec.ts","",""
