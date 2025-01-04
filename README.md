@@ -34,9 +34,32 @@ Before you begin, ensure the following are installed on your system:
    Verify the installation:
    allure --version
 
-## Running the Tests
+  ## Running the Tests
 
-To execute the test suite, use the following command:
-  ```bash
-  npx playwright test
-This command runs all tests defined in the project and outputs the results in the console. 
+     To execute the test suite, use the following command:
+     npx playwright test
+     This command runs all tests defined in the project and outputs the results in the console.
+
+## Generating and Viewing Allure Reports
+    Run Tests with Allure Reporting: Execute the tests and generate Allure test results:
+    npx playwright test --reporter=allure-playwright
+
+     
+Generate the Allure Report: After running the tests, generate the Allure report using the following command:
+
+bash
+Copy code
+allure generate ./allure-results -o ./allure-report --clean
+./allure-results: The directory where Playwright outputs the test results.
+./allure-report: The directory where the generated report will be stored.
+--clean: Ensures that the target directory is cleared before generating the report.
+Open the Allure Report: To view the generated report in your browser, run:
+
+bash
+Copy code
+allure open ./allure-report
+This opens the generated report in your default browser.
+
+Capturing Screenshots and Videos
+Screenshots: Automatically captured at key stages of each test and saved in the screenshots/ directory.
+Video Recordings: Captured for each test execution and saved in the videos/ directory.
